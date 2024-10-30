@@ -1,0 +1,26 @@
+
+<audio controls autoplay>
+    <source src="heart-shaped-box-guitar-only.wav" type="audio/wav" id="song">
+    
+</audio>
+
+<head>
+    <title>Oh god</title>
+    <style>
+      .clickable {
+        cursor: pointer;
+      }
+    </style>
+    </head>
+    <body>
+    
+    
+    <h2 class="clickable">Click me!</h2>
+    
+    
+    </body>
+
+<script src="Script.json">
+
+</script>
+

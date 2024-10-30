@@ -1,0 +1,9 @@
+let music = document.getElementById("song");
+var block = document.getElementById("click");
+
+
+function doSomething()
+{
+    
+}
+
