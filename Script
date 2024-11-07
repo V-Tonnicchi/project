@@ -1,0 +1,10 @@
+function startFunction()
+{
+    document.getElementById('song').play();
+}
+
+function otherStart()
+{
+    var audio = new Audio('heart-shaped-box-guitar-only.wav');
+    audio.play();
+}

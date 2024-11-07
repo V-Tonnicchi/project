@@ -1,26 +1,7 @@
 
-<audio controls autoplay>
-    <source src="heart-shaped-box-guitar-only.wav" type="audio/wav" id="song">
-    
-</audio>
+<audio controls id="song" src="heart-shaped-box-guitar-only.wav" ></audio>
 
-<head>
-    <title>Oh god</title>
-    <style>
-      .clickable {
-        cursor: pointer;
-      }
-    </style>
-    </head>
-    <body>
-    
-    
-    <h2 class="clickable">Click me!</h2>
-    
-    
-    </body>
+<button onClick="startFunction()"">Start song</button>
 
-<script src="Script.json">
-
-</script>
+<script src = "Script"></script>
 
