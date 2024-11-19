@@ -8,3 +8,10 @@ function otherStart()
     var audio = new Audio('heart-shaped-box-guitar-only.wav');
     audio.play();
 }
+
+function timeFunction()
+{
+    const now = new Date();
+
+    document.getElementById('demo').innerHTML = "Hallu!";
+}
