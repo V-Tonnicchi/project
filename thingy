@@ -1,15 +1,20 @@
+<!--This File is purely meant for testing the functions-->
+
 <body>
-<audio controls id="song" src="heart-shaped-box-guitar-only.wav"></audio>
+<audio controls id ="song" src="heart-shaped-box-guitar-only.wav"></audio>
 
 <button onClick="startFunction()"">Start song</button>
 
 <div id="demo"></div>
 
-<button onClick="timeFunction()">Get Milliseconds</button>
+<button onClick="timeFunction()">Get Minutes</button>
+
+<button onClick="displayTime()">Display Start</button>
+<div id="demo3"></div>
 
 <div id="demo2"></div>
 
-<button onClick="extTimeFunction()">Meow Meow</button>
+<button onClick="extTimeFunction()">Diff</button>
 
 
 

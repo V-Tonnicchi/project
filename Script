@@ -7,23 +7,30 @@ function startFunction()
 function timeFunction()
 {
     const now = new Date();
-    const mill = now.getMilliseconds();
+    const mill = now.getMinutes();
 
     document.getElementById('demo').innerHTML = mill;
 }
 
 const aud = document.getElementById('song');
+aud.play();
 const now = new Date();
-const startmill = now.getMilliseconds();
+const startmill = now.getTime();
+document.getElementById('demo3').innerHTML = startmill;
 
 function extTimeFunction()
 {
     if(!aud.paused)
     {
     const press = new Date();
-    const pressmill = Math.abs(press.getMilliseconds() - startmill);
+    const pressmill = Math.abs(press.getTime() - startmill);
 
     document.getElementById('demo2').innerHTML = pressmill;
     }
 
+}
+
+function displayTime()
+{
+    document.getElementById('demo3').innerHTML = startmill;
 }
