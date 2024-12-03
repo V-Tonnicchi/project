@@ -3,15 +3,27 @@ function startFunction()
     document.getElementById('song').play();
 }
 
-function otherStart()
-{
-    var audio = new Audio('heart-shaped-box-guitar-only.wav');
-    audio.play();
-}
 
 function timeFunction()
 {
     const now = new Date();
+    const mill = now.getMilliseconds();
 
-    document.getElementById('demo').innerHTML = "Hallu!";
+    document.getElementById('demo').innerHTML = mill;
+}
+
+const aud = document.getElementById('song');
+const now = new Date();
+const startmill = now.getMilliseconds();
+
+function extTimeFunction()
+{
+    if(!aud.paused)
+    {
+    const press = new Date();
+    const pressmill = Math.abs(press.getMilliseconds() - startmill);
+
+    document.getElementById('demo2').innerHTML = pressmill;
+    }
+
 }

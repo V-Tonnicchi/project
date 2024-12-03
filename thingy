@@ -1,7 +1,19 @@
-
-<audio controls id="song" src="heart-shaped-box-guitar-only.wav" ></audio>
+<body>
+<audio controls id="song" src="heart-shaped-box-guitar-only.wav"></audio>
 
 <button onClick="startFunction()"">Start song</button>
 
+<div id="demo"></div>
+
+<button onClick="timeFunction()">Get Milliseconds</button>
+
+<div id="demo2"></div>
+
+<button onClick="extTimeFunction()">Meow Meow</button>
+
+
+
+
 <script src = "Script"></script>
 
+</body>
