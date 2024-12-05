@@ -26,6 +26,19 @@ function extTimeFunction() //function for Button "Diff"
 
 }
 
+function displayArr()
+{
+    const times = document.createElement('p')
+    for(let i = 0; i < 10; i++)
+        {
+            const node = document.createTextNode(arr.at(i) + "\n");
+            times.appendChild(node);
+        }
+    const elem = document.getElementById('meow');
+    elem.appendChild(times);    
+        
+}
+
 function displayTime()
 {
     document.getElementById('demo3').innerHTML = startmill;

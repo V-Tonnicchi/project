@@ -14,6 +14,11 @@
 
 <button onClick="extTimeFunction()">Diff</button>
 
+<div id = "meow"></div>
+<button onClick="displayArr()">Display Array</button>
+
+<div id = "meow"></div>
+
 <p id="TP01_01"></p>
 
 
