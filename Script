@@ -7,20 +7,21 @@ function timeFunction() //Test Function: calls current Minute ("Get Minutes" But
 }
 
 const aud = document.getElementById('song');
-aud.play();
 const now = new Date();
 const startmill = now.getTime();
 document.getElementById('demo3').innerHTML = startmill;
+const arr = [];
 
 function extTimeFunction() //function for Button "Diff"
 {
     if(!aud.paused)
     {
         //Case: Audio Element isn't paused
-    const press = new Date();
-    const pressmill = Math.abs(press.getTime() - startmill);
+        const press = new Date();
+        const pressmill = Math.abs(press.getTime() - startmill);
 
-    document.getElementById('demo2').innerHTML = pressmill;
+        document.getElementById('demo2').innerHTML = pressmill;
+        arr.push(pressmill);
     }
 
 }
@@ -29,3 +30,10 @@ function displayTime()
 {
     document.getElementById('demo3').innerHTML = startmill;
 }
+
+//TODO:
+//1. Startzeitpunkt der Audioaufnahme = startmill
+//2. Jeder Click auf Diff wird in ein Array gespeichtert/in ein Array auf HTML indiziert
+//3. Diff Knopf auf Leertaste ändern
+
+//Priority: 2, 1, 3 
