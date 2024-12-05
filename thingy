@@ -1,9 +1,7 @@
 <!--This File is purely meant for testing the functions-->
 
 <body>
-<audio controls id ="song" src="heart-shaped-box-guitar-only.wav"></audio>
-
-<button onClick="startFunction()"">Start song</button>
+<audio autoplay id ="song" src="heart-shaped-box-guitar-only.wav"></audio>
 
 <div id="demo"></div>
 

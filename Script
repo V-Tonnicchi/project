@@ -1,10 +1,4 @@
-function startFunction()
-{
-    document.getElementById('song').play();
-}
-
-
-function timeFunction()
+function timeFunction() //Test Function: calls current Minute ("Get Minutes" Button)
 {
     const now = new Date();
     const mill = now.getMinutes();
@@ -18,10 +12,11 @@ const now = new Date();
 const startmill = now.getTime();
 document.getElementById('demo3').innerHTML = startmill;
 
-function extTimeFunction()
+function extTimeFunction() //function for Button "Diff"
 {
     if(!aud.paused)
     {
+        //Case: Audio Element isn't paused
     const press = new Date();
     const pressmill = Math.abs(press.getTime() - startmill);
 
