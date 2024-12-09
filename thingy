@@ -5,13 +5,14 @@
 <div id="demo"></div>
 
 <button onClick="startFunction()">Start Song</button>
+<button onClick="stopFunction()">STOP</button>
 
 <div hidden id="demo3"></div>
 
 <div id="demo2"></div>
 
 <button onClick="extTimeFunction()">Diff</button>
-
+<input type="text" onkeypress="extTimeFunction()"></input>
 <div id = "meow"></div>
 <button onClick="displayArr()">Display Array</button>
 

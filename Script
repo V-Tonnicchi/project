@@ -7,7 +7,12 @@ function startFunction() //called when Start Song is pressed
     aud.play();
     const now = new Date();
     startmill = now.getTime(); //sets start time as the time the button is pressed
-    displayTime();
+    displayTime(); //testing feature: displays starting time
+}
+
+function stopFunction() //called when STOP is pressed, stops wav
+{
+    aud.pause();
 }
 
 
