@@ -54,6 +54,6 @@ function displayTime() //test function to display the starting time
 //TODO:
 //1. Startzeitpunkt der Audioaufnahme = startmill (DONE)
 //2. Jeder Click auf Diff wird in ein Array gespeichtert/in ein Array auf HTML indiziert (DONE)
-//3. Diff Knopf auf Leertaste ändern
+//3. Diff Knopf auf Leertaste ändern (Done?)
 
 //Priority: 2, 1, 3 
