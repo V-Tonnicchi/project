@@ -36,13 +36,18 @@ function extTimeFunction() //function for Button "Diff"
 function displayArr() //test function to display first 10 inputs of Array
 {
     const times = document.createElement('p')
-    for(let i = 0; i < 10; i++)
+    for(let i = 0; i < 20; i++)
         {
             const node = document.createTextNode(arr.at(i) + "\n");
             times.appendChild(node);
         }
     const elem = document.getElementById('meow');
     elem.appendChild(times);    
+}
+
+function continueFunction() //this is supposed to emulate what happens at the End of the test
+{
+    let values = arr.join(";"); //values is supposed to be the String that is then saved
 }
 
 function displayTime() //test function to display the starting time
@@ -52,8 +57,7 @@ function displayTime() //test function to display the starting time
 }
 
 //TODO:
-//1. Startzeitpunkt der Audioaufnahme = startmill (DONE)
-//2. Jeder Click auf Diff wird in ein Array gespeichtert/in ein Array auf HTML indiziert (DONE)
+//PHP: kann php variablen spiechern ohne seite zu verlassen?
+//->
+//Diff Button größer und/oder Input per leertaste OHNE input feld
 //3. Diff Knopf auf Leertaste ändern (Done?)
-
-//Priority: 2, 1, 3 
