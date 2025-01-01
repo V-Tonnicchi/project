@@ -1,13 +1,8 @@
-
-var startmill;
 const aud = document.getElementById('song');
 
 function startFunction() //called when Start Song is pressed
 {
     aud.play();
-    const now = new Date();
-    startmill = now.getTime(); //sets start time as the time the button is pressed
-    displayTime(); //testing feature: displays starting time
 }
 
 function stopFunction() //called when STOP is pressed, stops wav
@@ -15,20 +10,15 @@ function stopFunction() //called when STOP is pressed, stops wav
     aud.pause();
 }
 
-
-document.getElementById('demo3').innerHTML = startmill;
 const arr = [];
 
 function extTimeFunction() //function for Button "Diff"
 {
     if(!aud.paused)
     {
-        //Case: Audio Element isn't paused
-        const press = new Date();
-        const pressmill = Math.abs(press.getTime() - startmill);
-
-        document.getElementById('demo2').innerHTML = pressmill;
-        arr.push(pressmill);
+        var curTime = Math.floor(aud.currentTime*1000);
+        document.getElementById('demo2').innerHTML = curTime;
+        arr.push(curTime);
     }
 
 }
@@ -45,9 +35,16 @@ function displayArr() //test function to display first 10 inputs of Array
     elem.appendChild(times);    
 }
 
+var values;
 function continueFunction() //this is supposed to emulate what happens at the End of the test
 {
-    let values = arr.join(";"); //values is supposed to be the String that is then saved
+    values = arr.join(";"); //values is supposed to be the String that is then saved
+}
+
+function displayText()
+{
+    continueFunction();
+    document.getElementById('meow2').innerHTML = values;
 }
 
 function displayTime() //test function to display the starting time

@@ -15,8 +15,10 @@
 <input type="text" onkeypress="extTimeFunction()"></input>
 <div id = "meow"></div>
 <button onClick="displayArr()">Display Array</button>
+<button onClick="displayText()">Display Text</button>
 
 <div id = "meow"></div>
+<div id = "meow2"></div>
 
 <p id="TP01_01"></p>
 
