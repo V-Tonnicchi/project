@@ -11,8 +11,8 @@
 
 <div id="demo2"></div>
 
-<button onClick="extTimeFunction()">Diff</button>
-<input type="text" onkeypress="extTimeFunction()"></input>
+<button onClick="extTimeFunction()" style = "width: 300px; height: 100px;">Diff</button>
+<p onkeypress="extTimeFunction()"></p>
 <div id = "meow"></div>
 <button onClick="displayArr()">Display Array</button>
 <button onClick="displayText()">Display Text</button>
