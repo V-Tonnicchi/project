@@ -1,4 +1,6 @@
 const aud = document.getElementById('song');
+var values;
+const arr = [];
 
 function startFunction() //called when Start Song is pressed
 {
@@ -9,8 +11,6 @@ function stopFunction() //called when STOP is pressed, stops wav
 {
     aud.pause();
 }
-
-const arr = [];
 
 function extTimeFunction() //function for Button "Diff"
 {
@@ -35,26 +35,20 @@ function displayArr() //test function to display first 10 inputs of Array
     elem.appendChild(times);    
 }
 
-var values;
 function continueFunction() //this is supposed to emulate what happens at the End of the test
 {
     values = arr.join(";"); //values is supposed to be the String that is then saved
+    document.getElementById('TP01_01').innerHTML = values;
 }
 
-function displayText()
+function displayText() //test function to display the final String value
 {
     continueFunction();
     document.getElementById('meow2').innerHTML = values;
 }
 
-function displayTime() //test function to display the starting time
+aud.onended = function()
 {
-    document.getElementById('demo3').hidden = false;
-    document.getElementById('demo3').innerHTML = startmill;
+    //displayText();
+    continueFunction();
 }
-
-//TODO:
-//PHP: kann php variablen spiechern ohne seite zu verlassen?
-//->
-//Diff Button größer und/oder Input per leertaste OHNE input feld
-//3. Diff Knopf auf Leertaste ändern (Done?)

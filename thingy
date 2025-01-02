@@ -1,7 +1,7 @@
  <!--This File is purely meant for testing the functions-->
 
 <body>
-<audio id ="song" src="heart-shaped-box-guitar-only.wav"></audio>
+<audio id ="song" src="Feel It Still_ex.mp3"></audio>
 <div id="demo"></div>
 
 <button onClick="startFunction()">Start Song</button>
@@ -11,8 +11,8 @@
 
 <div id="demo2"></div>
 
-<button onClick="extTimeFunction()" style = "width: 300px; height: 100px;">Diff</button>
-<p onkeypress="extTimeFunction()"></p>
+<button onClick="extTimeFunction()" style = "width: 300px; height: 150px;">Diff</button>
+<p></p>
 <div id = "meow"></div>
 <button onClick="displayArr()">Display Array</button>
 <button onClick="displayText()">Display Text</button>
@@ -20,7 +20,7 @@
 <div id = "meow"></div>
 <div id = "meow2"></div>
 
-<p id="TP01_01"></p>
+<p hidden id="TP01_01"></p>
 
 
 <script src = "Script"></script>
