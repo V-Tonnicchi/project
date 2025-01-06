@@ -23,17 +23,17 @@ function extTimeFunction() //function for Button "Diff"
 
 }
 
-function displayArr() //test function to display first 10 inputs of Array
-{
-    const times = document.createElement('p')
-    for(let i = 0; i < 20; i++)
-        {
-            const node = document.createTextNode(arr.at(i) + "\n");
-            times.appendChild(node);
-        }
-    const elem = document.getElementById('meow');
-    elem.appendChild(times);    
-}
+//function displayArr() //test function to display first 10 inputs of Array
+//{
+//    const times = document.createElement('p')
+//    for(let i = 0; i < 20; i++)
+//        {
+//            const node = document.createTextNode(arr.at(i) + "\n");
+//            times.appendChild(node);
+//        }
+//    const elem = document.getElementById('meow');
+//    elem.appendChild(times);    
+//}
 
 function continueFunction() //this is supposed to emulate what happens at the End of the test
 {
@@ -41,11 +41,11 @@ function continueFunction() //this is supposed to emulate what happens at the En
     document.getElementById('TP01_01').innerHTML = values;
 }
 
-function displayText() //test function to display the final String value
-{
-    continueFunction();
-    document.getElementById('meow2').innerHTML = values;
-}
+//function displayText() //test function to display the final String value
+//{
+//    continueFunction();
+//    document.getElementById('meow2').innerHTML = values;
+//}
 
 aud.onended = function()
 {

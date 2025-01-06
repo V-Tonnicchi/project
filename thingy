@@ -7,18 +7,23 @@
 <button onClick="startFunction()">Start Song</button>
 <button onClick="stopFunction()">STOP</button>
 
-<div hidden id="demo3"></div>
-
+<!--
 <div id="demo2"></div>
+-->
 
 <button onClick="extTimeFunction()" style = "width: 300px; height: 150px;">Diff</button>
 <p></p>
 <div id = "meow"></div>
-<button onClick="displayArr()">Display Array</button>
-<button onClick="displayText()">Display Text</button>
 
+<!-- 
+Test Buttons:
+<button onClick="displayArr()">Display Array</button>
+<button onClick="displayText()">Display Text</button> 
+
+Test divs
 <div id = "meow"></div>
 <div id = "meow2"></div>
+-->
 
 <p hidden id="TP01_01"></p>
 
