@@ -1,13 +1,13 @@
 const aud = document.getElementById('song');
-var values;
 const arr = [];
+var values;
 
 function startFunction() //called when Start Song is pressed
 {
     aud.play();
 }
 
-function stopFunction() //called when STOP is pressed, stops wav
+function stopFunction() //called when STOP is pressed, pauses audio
 {
     aud.pause();
 }
@@ -17,7 +17,7 @@ function extTimeFunction() //function for Button "Diff"
     if(!aud.paused)
     {
         var curTime = Math.floor(aud.currentTime*1000);
-        document.getElementById('demo2').innerHTML = curTime;
+        // document.getElementById('demo2').innerHTML = curTime;
         arr.push(curTime);
     }
 
@@ -35,12 +35,6 @@ function extTimeFunction() //function for Button "Diff"
 //    elem.appendChild(times);    
 //}
 
-function continueFunction() //this is supposed to emulate what happens at the End of the test
-{
-    values = arr.join(";"); //values is supposed to be the String that is then saved
-    document.getElementById('TP01_01').innerHTML = values;
-}
-
 //function displayText() //test function to display the final String value
 //{
 //    continueFunction();
@@ -50,5 +44,10 @@ function continueFunction() //this is supposed to emulate what happens at the En
 aud.onended = function()
 {
     //displayText();
-    continueFunction();
+    endFunction();
+}
+function endFunction()
+{
+    values = arr.join(";");
+    document.getElementById('TP01_01').innerHTML = values;
 }
