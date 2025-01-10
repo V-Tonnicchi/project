@@ -20,11 +20,12 @@ Test Buttons:
 <button onClick="displayArr()">Display Array</button>
 <button onClick="displayText()">Display Text</button> 
 
-Test divs
+Test divs:
 <div id = "meow"></div>
 <div id = "meow2"></div>
 -->
 
+<!-- Object to save the values:-->
 <p hidden id="TP01_01"></p>
 
 
